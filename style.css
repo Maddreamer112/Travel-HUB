@@ -1,51 +1,74 @@
-h1{
-    text-align: center;
-}
-.navbar ul{
-    list-style-type: none;
-    background-color:gray
-    
-    padding: 0px;
-    margin: 0px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
 
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-}
-header {
-background-color: #333;
-color: #fff;
-padding: 10px 0;
-text-align: center;
-}
 h1 {
-margin: 0;
+    font-weight: 700;
+    color: #1F2544;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
 }
-nav {
-background-color: #444;
-color: #fff;
-padding: 10px 0;
-text-align: center;
+
+h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #1F2544;
 }
-nav ul {
-list-style-type: none;
-padding: 0;
+
+header, footer {
+    background-color: #1F2544;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
-nav ul li {
-display: inline;
-margin: 0 10px;
+
+.navbar {
+    background-color: #1F2544;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: #FFD0EC;
+    font-weight: 700;
+}
+
 section {
-padding: 20px;
+    padding: 40px;
 }
+
 footer {
-background-color: #333;
-color: #fff;
-padding: 10px 0;
-text-align: center;
-position: fixed;
-bottom: 0;
-width: 100%;
+    padding: 20px 0;
+    width: 100%;
+    background-color: #1F2544;
+}
+
+.img {
+    background-image: url(pexels-tms-sam-837745.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+/* Adjustments for small screens */
+@media screen and (max-width: 600px) {
+    .navbar ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
